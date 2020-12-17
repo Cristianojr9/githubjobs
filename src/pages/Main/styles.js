@@ -1,6 +1,14 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 50px;
+  }
+
 `;
 
 export const Input = styled.div`

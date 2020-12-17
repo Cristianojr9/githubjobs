@@ -22,28 +22,38 @@ export const Container = styled.div`
       border-radius: 5px;
     } 
 
-    h1 {
-      font-size: 18px;
-      font-style: normal;
-      font-weight: normal;
-      margin-left: 20px;
-      color: #363F5F;
+    div {
+      h1 {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: normal;
+        margin-left: 20px;
+        color: #363F5F;
+      }
+
+      small {
+        font-size: 12px;
+        margin-left: 20px;
+        color:  rgba(54, 63, 95, 0.79);
+        background: rgba(150, 156, 178, 0.4);
+        border-radius: 2px;
+      }
+
+      span { 
+        color: #969CB3;
+        font-size: 16px;
+        line-height: 24px;
+        margin-left: 20px;
+        margin-right: 10px;
+      }
     }
 
-    small {
-      font-size: 12px;
-      margin-left: 20px;
-      color:  rgba(54, 63, 95, 0.79);
-      background: rgba(150, 156, 178, 0.4);
-      border-radius: 2px;
-    }
-
-    span { 
-      color: #969CB3;
+    span {
       font-size: 16px;
       line-height: 24px;
       margin-left: auto;
       margin-right: 10px;
+      color: #969CB3;
     }
   }
 `;

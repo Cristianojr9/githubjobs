@@ -8,8 +8,10 @@ import { Container, Logo, Nav } from './styles';
 function Header() {
   return (
     <Container>
-      <Logo>
-        <img src={LogoImg} alt="github" />
+      <Logo >
+        <Link to="/">
+          <img src={LogoImg} alt="github" />
+        </Link>
       </Logo>
       <Nav>
         <Link to="/">
