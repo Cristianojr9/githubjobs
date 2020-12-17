@@ -1,9 +1,15 @@
 import React from 'react';
 
-// import { Container } from './styles';
+import Routes from './routes';
+import GlobalStyled from './styles/global';
 
 function App() {
-  return <div />;
+  return (
+    <>
+      <GlobalStyled />
+      <Routes />
+    </>
+  )
 }
 
 export default App;
