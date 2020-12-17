@@ -12,7 +12,7 @@ function Header() {
         <img src={LogoImg} alt="github" />
       </Logo>
       <Nav>
-        <Link>
+        <Link to="/">
           How it Works
         </Link>
       </Nav>

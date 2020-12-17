@@ -1,5 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://jobs.github.com'
+  baseURL: 'https://cors-anywhere.herokuapp.com/http://jobs.github.com/'
 })
+
+export default api;
