@@ -14,7 +14,7 @@ function Header() {
         </Link>
       </Logo>
       <Nav>
-        <Link to="/">
+        <Link to="/howtoworks">
           How it Works
         </Link>
       </Nav>
