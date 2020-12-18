@@ -4,6 +4,7 @@ import { CircularProgress } from '@material-ui/core'
 
 import Header from '../../components/Header';
 import Job from '../../components/Job';
+import Footer from '../../components/Footer';
 
 import api from '../../services/api';
 
@@ -32,7 +33,7 @@ function Main() {
       <Input>
         <label>Job Description</label>
         <input
-          placeholder="Filter by title, benefits, companies, expertise"
+          placeholder="Filter by title, companies, type"
           defaultValue={value}
           onChange={e => setValue(e.target.value)}
         >
@@ -62,6 +63,7 @@ function Main() {
             }
           </div>
         )}
+      <Footer />
     </Container >
   );
 }

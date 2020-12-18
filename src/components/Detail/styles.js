@@ -1,12 +1,6 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  display: flex;
-
-  width: 100%;
-
-  padding: 0 100px;
-
   h2 {
     display: flex;
     align-items: center;
@@ -14,6 +8,17 @@ export const Container = styled.div`
 
     margin: 50px;
   }
+
+`;
+
+
+export const Content = styled.div`
+  display: flex;
+
+  width: 100%;
+
+  padding: 0 100px;
+
 `;
 
 export const ContentApply = styled.div`
@@ -31,12 +36,13 @@ export const ContentInfo = styled.div`
 
   display: grid;
 
-  span {
+  a {
     margin: 10px 0 10px;
     font-size: 17px;
     color: #2196f3;
     font-weight: bold;
     cursor: pointer;
+    text-decoration: none;
   }
 
   p {
