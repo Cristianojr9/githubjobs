@@ -14,6 +14,11 @@ export const Container = styled.div`
     align-items: center;
     cursor: pointer;
 
+    transition: transform 0.2s;
+    &:hover {
+      transform: translateX(20px)
+    }
+
     img {
       width: 200px;
       height: 128px;

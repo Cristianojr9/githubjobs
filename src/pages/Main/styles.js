@@ -8,8 +8,9 @@ export const Container = styled.div`
 
     margin: 50px;
   }
-
 `;
+
+export const ListJobs = styled.div``;
 
 export const Input = styled.div`
   width: 100%;

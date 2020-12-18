@@ -12,7 +12,7 @@ function Routes() {
       <Switch>
         <Route path='/' exact component={Main} />
         <Route path='/detail/:id' exact component={Detail} />
-        <Route path='/howtoworks' exact component={HowToWorks} />
+        <Route path='/faq' exact component={HowToWorks} />
         <Route path='/api' exact component={Api} />
       </Switch>
     </BrowserRouter>

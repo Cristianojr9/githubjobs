@@ -15,6 +15,6 @@ export default createGlobalStyle`
   body {
     background: #E5E5E5;
     -webkit-font-smoothing: antialiased !important;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Slab', serif;
   }
 `;

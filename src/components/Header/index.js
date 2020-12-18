@@ -14,7 +14,10 @@ function Header() {
         </Link>
       </Logo>
       <Nav>
-        <Link to="/howtoworks">
+        <Link to="/api">
+          API
+        </Link>
+        <Link to="/faq">
           How it Works
         </Link>
       </Nav>

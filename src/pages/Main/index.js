@@ -4,11 +4,10 @@ import { CircularProgress } from '@material-ui/core'
 
 import Header from '../../components/Header';
 import Job from '../../components/Job';
-import Footer from '../../components/Footer';
 
 import api from '../../services/api';
 
-import { Container, Input } from './styles';
+import { Container, Input, ListJobs } from './styles';
 
 function Main() {
   const [value, setValue] = useState('');
@@ -17,15 +16,18 @@ function Main() {
 
   useEffect(() => {
     async function loadJobs() {
-      const response = await api.get('/positions.json');
-      setJobs(response.data);
+      try {
+        const response = await api.get('/positions.json');
+        setJobs(response.data);
 
-      setLoading(false);
+        setLoading(false);
+      } catch (err) {
+        alert('API Not Connect');
+      }
+
     }
     loadJobs();
   }, []);
-
-  console.log(jobs);
 
   return (
     <Container >
@@ -42,7 +44,7 @@ function Main() {
       {loading ? (
         <h2><CircularProgress /></h2>
       ) : (
-          <div>
+          <ListJobs>
             {jobs
               .filter((job) => {
                 if (job.title.toLowerCase().includes(value) || job.type.toLowerCase().includes(value) || job.company.toLowerCase().includes(value)) {
@@ -61,9 +63,8 @@ function Main() {
                 />
               ))
             }
-          </div>
+          </ListJobs>
         )}
-      <Footer />
     </Container >
   );
 }

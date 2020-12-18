@@ -21,7 +21,7 @@ function DetailComponent() {
       setType(response.data.type);
       setCompanylogo(response.data.company_logo);
       setTitle(response.data.title);
-      setDescription(response.data.description);
+      setDescription(response.data.description.replace(/(<\/?\w+?>)\s*?(<\/?\w+?>)|(<\/?\w+?>)/g, ''));
 
       setLoading(false);
     }
